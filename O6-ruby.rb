@@ -1,7 +1,7 @@
 # Open-ended D6
 
 def d6
-	return rand(1..6)
+  return rand(1..6)
 end
 
 def mod6
