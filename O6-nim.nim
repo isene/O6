@@ -1,6 +1,6 @@
 import random
 randomize()
-
+ 
 proc D(x: int): int = result = random(x) + 1
 
 var

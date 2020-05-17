@@ -1,7 +1,7 @@
 function D(x)
     rand(1:x)
 end
-
+ 
 m = true; mark = ""; t = 0; d = D(6); t = D(6)
 if d == 1
 	while t < 4

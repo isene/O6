@@ -1,6 +1,6 @@
 ! This is the Frotran version of the Open Ended D6 rolls used in the Amar RPG
 ! See http://d6gaming.org for details about the Amar Role-Playing Game system
-
+ 
 FUNCTION D(x)
 INTEGER      :: x
 REAL         :: u
