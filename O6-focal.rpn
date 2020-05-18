@@ -1,0 +1,78 @@
+Open-ended D6 rolls for the HP-41 calculator (FOCAL language)
+
+001 LBL "O6"
+002 0
+003 X<>F
+004 XEQ 00   ; D6
+005 STO 00 
+006 1
+007 X=Y?
+008 SF 00
+009 X=Y? 
+010 GTO 01   ; 1 is rolled
+011 RDN
+012 6
+013 X=Y?
+014 SF 03
+015 X=Y?
+016 GTO 01   ; 6 is rolled
+017 LBL 10   ; Show result
+018 CF 00
+019 CF 03
+020 CF 04
+021 CF 05 
+022 RCL 00
+023 CLA
+024 FS? 01
+025 "FUMBLE"
+026 FS? 02
+027 "CRITICAL"
+028 STOP
+029 GTO "O6"
+030 LBL 01   ; Going up or down
+031 SF 04
+032 LBL 02
+033 XEQ 00
+034 6 
+035 X#Y?
+036 CF 04
+037 X#Y?
+038 GTO 03   ; An ultimate is not rolled (1 or 6 in effect)
+039 FS? 04
+040 SF 05    ; An ultimate was rolled just previously
+041 SF 04    ; Ultimate flag set
+042 FC? 05   ; Not yet a Critical/Fumble
+043 GTO 03
+044 FS? 00   ; Going down - then this is a Fumble
+045 SF 01
+046 FS? 03   ; Going up - then this is a Critical
+047 SF 02 
+048 LBL 03
+049 X<>Y 
+050 4
+051 /
+052 INT
+053 X=0?
+054 GTO 10   ; Open-ended ends, go to show results
+055 1
+056 FS? 01
+057 CHS 
+058 ST+ 00
+059 GTO 02
+060 LBL 00   ; D6 (with self-made RNG)
+061 DATE
+062 TIME
+063 +
+064 1 E49
+065 *
+066 PI
+067 MOD
+068 LN1+X
+069 R-D
+070 FRC
+071 6
+072 *
+073 1
+074 +
+075 INT 
+076 END 
