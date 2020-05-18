@@ -1,7 +1,7 @@
 # O6
 Open-ended D6 rolls implemented in various programming languages.
 
-It works like this: You roll a six-sided dice. If a 6 is rolled on the dice, roll the dice again. Then, if you roll 4–6, add 1 to the roll and roll the dice again, etc. If a 1 is rolled on the dice, roll the dice again. If 1–3 is rolled, subtract 1 from the roll and roll the dice again, etc. Any two consequtive 1s indicates a "fumble" while two consequtive 6s indicates a "critical" roll.
+It works like this: You roll a six-sided dice. If you roll a 6, roll the dice again. If 4–6 is rolled, add 1 to the original roll (making it a 7) and roll the dice again, adding 1 to the original roll until you roll a 1, 2 or 3. If the original roll is a 1, roll the dice again, subtracting 1 from the original 1 if you roll 1–3. Keep rolling and subtracting until you end up rolling a 4, 5 or 6.Any two consequtive 1s indicates a "fumble" while two consequtive 6s indicates a "critical" roll.
 
 There is no limit to the result you can get with an open ended dice roll, including negative results such as –5.
 
