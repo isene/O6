@@ -7,4 +7,11 @@ There is no limit to the result you can get with an open ended dice roll, includ
 
 See [the Amar RPG wbsite](http:d6gaming.org/index.php/The_Character#Open_Ended_Rolls) for more.
 
-So far it seems to me that Forth is the most compact code, while Vimscript and Fortran are the most verbose, with Julia and Nim perhaps being the most humanly readable - although I prefer to program in Ruby and FOCAL.
+Original not for my own code: So far it seems to me that Forth is the most compact code, while Vimscript and Fortran are the most verbose, with Julia and Nim perhaps being the most humanly readable - although I prefer to program in Ruby and FOCAL.
+
+And then a [Julia thread popped
+up](https://discourse.julialang.org/t/opportunity-to-write-some-idiomatic-julia-code/39702/21)
+with lots of attack angles and really clever Julia code. I took one and
+included it here as
+[O6-julia2.jl](https://github.com/isene/O6/blob/master/O6-julia2.jl). This is
+so far the coolest I've seen as an O6 implementation.
