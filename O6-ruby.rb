@@ -17,7 +17,6 @@ end
 
 def o6
   result, string = d6, ""
-  return result if result === (2..5)
   mod, flag = mod6
   if result == 1
     result -= mod
