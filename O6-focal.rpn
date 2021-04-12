@@ -59,20 +59,21 @@ Open-ended D6 rolls for the HP-41 calculator (FOCAL language)
 057 CHS 
 058 ST+ 00
 059 GTO 02
-060 LBL 00   ; D6 (with self-made RNG)
-061 DATE
-062 TIME
-063 +
-064 1 E49
-065 *
-066 PI
-067 MOD
-068 LN1+X
-069 R-D
-070 FRC
-071 6
-072 *
-073 1
-074 +
-075 INT 
-076 END 
+060 LBL "D6" 
+061 LBL 00   ; D6 (with self-made RNG)
+062 DATE
+063 TIME
+064 +
+065 1 E49
+066 *
+067 PI
+068 MOD
+069 LN1+X
+070 R-D
+071 FRC
+072 6
+073 *
+074 1
+075 +
+076 INT 
+077 END 
