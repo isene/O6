@@ -7,6 +7,7 @@
 [![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
 
 <img src="img/o6_logo.svg" align="left" width="150" height="150"> Open-ended D6 rolls implemented in various programming languages.
+<br clear="left"/>
 
 It works like this: You roll a six-sided dice. If you roll a 6, roll the dice again. If 4–6 is rolled, add 1 to the original roll (making it a 7) and roll the dice again, adding 1 to the original roll until you roll a 1, 2 or 3. If the original roll is a 1, roll the dice again, subtracting 1 from the original 1 if you roll 1–3. Keep rolling and subtracting until you end up rolling a 4, 5 or 6.Any two consequtive 1s indicates a "fumble" while two consequtive 6s indicates a "critical" roll.
 
