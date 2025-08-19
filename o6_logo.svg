@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="200" fill="#0f0f1e"/>
+  
+  <!-- Rolling dice animation -->
+  <g transform="translate(100, 90)">
+    <!-- Die with rotation animation -->
+    <g>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0;360"
+        dur="3s"
+        repeatCount="indefinite"/>
+      
+      <!-- Die face -->
+      <rect x="-35" y="-35" width="70" height="70" fill="#fff" stroke="#333" stroke-width="2" rx="8"/>
+      
+      <!-- Pips for 6 -->
+      <g fill="#CC342D">
+        <circle cx="-15" cy="-15" r="5"/>
+        <circle cx="0" cy="-15" r="5"/>
+        <circle cx="15" cy="-15" r="5"/>
+        <circle cx="-15" cy="15" r="5"/>
+        <circle cx="0" cy="15" r="5"/>
+        <circle cx="15" cy="15" r="5"/>
+      </g>
+    </g>
+    
+    <!-- Motion blur effect -->
+    <g opacity="0.3">
+      <rect x="-35" y="-35" width="70" height="70" fill="none" stroke="#fff" stroke-width="2" rx="8" transform="rotate(-30)"/>
+      <rect x="-35" y="-35" width="70" height="70" fill="none" stroke="#fff" stroke-width="2" rx="8" transform="rotate(-60)"/>
+    </g>
+  </g>
+  
+  <!-- Open-ended indicator arrows -->
+  <g stroke="#10a37f" stroke-width="2" fill="none">
+    <path d="M 60,90 L 40,90" marker-end="url(#greenarrow)" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 140,90 L 160,90" marker-end="url(#greenarrow)" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="greenarrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M 0,1 L 7,4 L 0,7" stroke="#10a37f" stroke-width="1.5" fill="none"/>
+    </marker>
+  </defs>
+  
+  <!-- Text -->
+  <text x="100" y="160" font-family="monospace" font-size="24" fill="#fff" text-anchor="middle" font-weight="bold">O6</text>
+  <text x="100" y="175" font-family="monospace" font-size="10" fill="#888" text-anchor="middle">Open-Ended D6</text>
+  <text x="100" y="188" font-family="monospace" font-size="9" fill="#666" text-anchor="middle">Multi-Language</text>
+</svg>
