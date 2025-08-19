@@ -1,6 +1,7 @@
 # O6
 
 [![Multi-Language](https://img.shields.io/badge/Multi-Language-brightgreen)](https://github.com/isene/O6)
+[![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat&logo=ruby&logoColor=white)](https://www.ruby-lang.org/)
 [![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
 [![GitHub stars](https://img.shields.io/github/stars/isene/O6.svg)](https://github.com/isene/O6/stargazers)
 [![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
